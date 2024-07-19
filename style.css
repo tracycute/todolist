@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Montserrat', san-serif;
+    box-sizing: border-box;
+}
+.container{
+    width : 100%;
+    min-height: 100vh;
+    background: #FDE5CB;
+    padding: 10px;
+}
+.todo-web{
+    width: 100% ;
+    max-width: 540px;
+    background:#BCD474;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-web h2{
+    color: #3B432E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-web h2 img{
+    width: 30px;
+    margin-right: 10px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #D9DC83;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#D9DC83;
+    color: #BB6A32;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ ul li.task{
+    list-style: none;
+    font-size: 17px;
+    padding: 1em 1em 0.5em 3em;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease; 
+} 
+ ul li.task::before{
+    content: '';
+    position:absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/img/3227498.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} 
+ul li.task.checked{
+    color: #BB6A32;
+    font-weight: 700;
+}
+
+ul li.task.checked::before{
+     background-image: url(img/check.png);
+}
+ul li.task span{
+    position: absolute;
+    right: 0;   
+    top: 5px;
+    width: 40px; 
+    height: 40px;
+    font-size: 22px;
+    color: #4a4d42;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li.task span:hover{
+    background-color: #e3e9c6;
+}
+
+.tan {
+    border: 0.3em solid #53642D;
+    box-shadow: 0em 0.2em #3D412A;
+    transition: all 0.2s ease;
+}
+
+.tan:active {
+    transform: translateY(0.3em);
+    box-shadow: 0em 0em;
+    transition: all 0.2s ease;
+}
